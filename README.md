@@ -92,9 +92,12 @@ Now, on Bohr.io, navigate to add a new project, and click on "import".
 Select the repository of your project(you may need to add your github account if you haven't before) and click import.
 ![Screenshot_2](https://user-images.githubusercontent.com/69644385/209866437-3da76f61-15f1-47c0-aefe-99214feace70.png)
 
-Now, navigate to your projects Settings> environment variables. You will need to add two environment variables:
-- INSTALL_CMD - ```npm install```
+Now, navigate to your projects Settings> environment variables. You will need to add one environment variable:
 - DATABASE_URL -  ```your_connection_string```
+
+And navigate to build & development and add:
+- Install Command - ```npm install```
+- Root Directory - ```./```
 
 Remember to use only the connection string, not the variable name. For example: 
 
